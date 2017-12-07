@@ -1,0 +1,19 @@
+{
+	"F5DeploymentAppInfo": [
+		{
+			"environment": "UAT",	
+			"app": "App1",
+			"description": "App description goes here",
+			"business": "Line of Business",
+			"year": "2017",
+			"bigip_mgmt": "192.168.50.212",
+			"certificate_passphrase": "abc",
+			"node_ip": "8.4.1.118",
+			"vs_ip_destination": "8.1.4.111",
+			"asm_template_name": "template_WIN_OTHER_IBM_ORACLE_JAVA",
+			"log_local": "log_local",
+			"log_remote": "log_local"
+		}
+	]
+}
+	
