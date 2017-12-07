@@ -2,7 +2,7 @@
 
 Initial ASM Configuration
 
-The ASm Initial Config Collection (ASM_Policy_Initial_Config.postman_collection.json)
+The ASM Initial Config Collection (ASM_Policy_Initial_Config.postman_collection.json)
 
 Configured the following elements on the F5 BIG-IP
 
