@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policy integrity_check="4e908482f230aae064cf8a01bc210f64" bigip_version="14.1.0" name="/F5_TTM_HackIt/A4/My_ASM_Policy">
+<policy integrity_check="4e908482f230aae064cf8a01bc210f64" bigip_version="14.1.0" name="/F5_TTM_HackIt/A4/F5_TTM_WAF_DEMO">
   <type>Security</type>
   <policy_version>
     <timestamp>2019-06-18T09:21:21Z</timestamp>
     <device_name>f5-ttm.com</device_name>
-    <policy_name>/F5_TTM_HackIt/A4/My_ASM_Policy</policy_name>
+    <policy_name>/F5_TTM_HackIt/A4/F5_TTM_WAF_DEMO</policy_name>
     <last_change>Policy Attack Signature Web-Server Administrator dir access [update]: Perform Staging was set to disabled. { audit: policy = /F5_TTM_HackIt/A4/My_ASM_Policy, username = admin, client IP = 172.16.214.1 }</last_change>
   </policy_version>
   <encoding>utf-8</encoding>
