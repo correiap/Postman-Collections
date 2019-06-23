@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policy integrity_check="95f3a73f129800c4e21f3b3e05186532" bigip_version="14.1.0" name="/F5_TTM_HackIt_WAF/A4/My_ASM_Policy">
+<policy integrity_check="ef5c260a0abe6562751389acb91fccc9" bigip_version="14.1.0" name="/Common/F5-TTM-Policy">
   <type>Security</type>
   <policy_version>
-    <timestamp>2019-06-19T14:35:07Z</timestamp>
+    <timestamp>2019-06-23T08:59:06Z</timestamp>
     <device_name>f5-ttm.com</device_name>
-    <policy_name>/F5_TTM_HackIt_WAF/A4/My_ASM_Policy</policy_name>
-    <last_change>Parameter * [update]: Maximum Length was set to 10.
-Metachars on Parameter Name Check was set to enabled.
-Learn New Entities was set to Never (wildcard only).
-Metachars on Parameter Value Check was set to enabled. { audit: policy = /F5_TTM_HackIt_WAF/A4/My_ASM_Policy, username = admin, client IP = 172.16.214.1 }</last_change>
+    <policy_name>/Common/F5-TTM-Policy</policy_name>
+    <last_change>Parameter nick [update]: Overridden Value Meta-characters were set to 0x22 - disallowed, 0x2a - disallowed, 0x31 - allowed. { audit: policy = /Common/F5-TTM-Policy, username = admin, client IP = 172.16.214.1 }</last_change>
   </policy_version>
   <encoding>utf-8</encoding>
   <description>Rapid Deployment Policy</description>
@@ -40,7 +37,7 @@ Metachars on Parameter Value Check was set to enabled. { audit: policy = /F5_TTM
     <csrf_url>
       <target_pattern>*</target_pattern>
       <wildcard_order>1</wildcard_order>
-      <last_updated>2019-06-19T14:08:53Z</last_updated>
+      <last_updated>2019-06-23T08:56:26Z</last_updated>
       <csrf_url_method>POST</csrf_url_method>
       <csrf_url_enforcement_action>verify-csrf-token</csrf_url_enforcement_action>
       <required_parameters>ignore</required_parameters>
@@ -1825,7 +1822,7 @@ Connection: close</response_header>
       <post_data_length>4096</post_data_length>
       <check_response>false</check_response>
       <in_staging>false</in_staging>
-      <last_updated>2019-06-19T14:08:53Z</last_updated>
+      <last_updated>2019-06-23T08:56:26Z</last_updated>
       <check_url_length>false</check_url_length>
       <check_request_length>false</check_request_length>
       <check_query_string_length>false</check_query_string_length>
@@ -1894,7 +1891,7 @@ Connection: close</response_header>
       <check_metachars>false</check_metachars>
       <check_methods>false</check_methods>
       <in_staging>false</in_staging>
-      <last_updated>2019-06-19T14:09:17Z</last_updated>
+      <last_updated>2019-06-23T08:57:27Z</last_updated>
       <clickjacking_protection>
         <enabled>false</enabled>
         <allow_rendering_in_frames>Never</allow_rendering_in_frames>
@@ -1953,7 +1950,7 @@ Connection: close</response_header>
       <check_metachars>false</check_metachars>
       <check_methods>false</check_methods>
       <in_staging>false</in_staging>
-      <last_updated>2019-06-19T14:09:17Z</last_updated>
+      <last_updated>2019-06-23T08:57:27Z</last_updated>
       <clickjacking_protection>
         <enabled>false</enabled>
         <allow_rendering_in_frames>Never</allow_rendering_in_frames>
@@ -2267,7 +2264,7 @@ Connection: close</response_header>
       <user_config_level>advanced</user_config_level>
       <check_metachars>false</check_metachars>
       <in_staging>false</in_staging>
-      <last_updated>2019-06-19T14:08:57Z</last_updated>
+      <last_updated>2019-06-23T08:56:30Z</last_updated>
       <cors_enforcement_enable>false</cors_enforcement_enable>
       <allow_cors>false</allow_cors>
       <wildcard_includes_slash>true</wildcard_includes_slash>
@@ -2294,7 +2291,7 @@ Connection: close</response_header>
       <user_config_level>advanced</user_config_level>
       <check_metachars>false</check_metachars>
       <in_staging>false</in_staging>
-      <last_updated>2019-06-19T14:08:57Z</last_updated>
+      <last_updated>2019-06-23T08:56:30Z</last_updated>
       <cors_enforcement_enable>false</cors_enforcement_enable>
       <allow_cors>false</allow_cors>
       <wildcard_includes_slash>true</wildcard_includes_slash>
@@ -2327,7 +2324,7 @@ Connection: close</response_header>
       <match_regular_expression></match_regular_expression>
       <is_sensitive>false</is_sensitive>
       <in_staging>false</in_staging>
-      <last_updated>2019-06-19T14:08:53Z</last_updated>
+      <last_updated>2019-06-23T08:56:26Z</last_updated>
       <parameter_name_metachars>
         <check_metachars>false</check_metachars>
       </parameter_name_metachars>
@@ -2351,7 +2348,7 @@ Connection: close</response_header>
       <match_regular_expression></match_regular_expression>
       <is_sensitive>false</is_sensitive>
       <in_staging>false</in_staging>
-      <last_updated>2019-06-19T14:32:09Z</last_updated>
+      <last_updated>2019-06-23T08:59:06Z</last_updated>
       <parameter_name_metachars>
         <check_metachars>false</check_metachars>
       </parameter_name_metachars>
@@ -2364,7 +2361,7 @@ Connection: close</response_header>
       <is_base64>false</is_base64>
       <metachar character="0x22">disallow</metachar>
       <metachar character="0x2a">disallow</metachar>
-      <metachar character="0x31">disallow</metachar>
+      <metachar character="0x31">allow</metachar>
     </parameter>
     <parameter type="wildcard" name="*">
       <wildcard_order>1</wildcard_order>
@@ -2379,7 +2376,7 @@ Connection: close</response_header>
       <match_regular_expression></match_regular_expression>
       <is_sensitive>false</is_sensitive>
       <in_staging>false</in_staging>
-      <last_updated>2019-06-19T14:35:07Z</last_updated>
+      <last_updated>2019-06-23T08:56:26Z</last_updated>
       <parameter_name_metachars>
         <check_metachars>true</check_metachars>
       </parameter_name_metachars>
@@ -24451,7 +24448,7 @@ Connection: close</response_header>
     <identify_device>false</identify_device>
     <maximum_prevention_time>3600</maximum_prevention_time>
     <flg_enabled>false</flg_enabled>
-    <last_updated>1560953333</last_updated>
+    <last_updated>1561280186</last_updated>
     <detection_threshold_credentials_stuffing_matches_reached>100</detection_threshold_credentials_stuffing_matches_reached>
     <detection_threshold_action>alarm-and-captcha</detection_threshold_action>
     <login_attempts_from_the_same_user_threshold>3</login_attempts_from_the_same_user_threshold>
@@ -25680,6 +25677,10 @@ Connection: close</response_header>
       <in_staging>false</in_staging>
     </threat_campaign>
     <threat_campaign name="cmp9f15940858ab2e810da6c1631cb67f61">
+      <enabled>true</enabled>
+      <in_staging>false</in_staging>
+    </threat_campaign>
+    <threat_campaign name="cmp5a10df94baa6aea71036cf2742c70e75">
       <enabled>true</enabled>
       <in_staging>false</in_staging>
     </threat_campaign>
